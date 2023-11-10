@@ -1,7 +1,6 @@
 # d1-api
 
 [![npm package][npm-img]][npm-url]
-[![Build Status][build-img]][build-url]
 [![Downloads][downloads-img]][downloads-url]
 [![Issues][issues-img]][issues-url]
 
@@ -40,10 +39,11 @@ const d1api = new D1API({
   databaseId: 'database-id',
 });
 
+// TypeScript is fully supported.
+type User = { id: number };
+
 // Return results of all rows. Tagged template is used to prepare statements.
-const response = await d1api.all<{
-  id: number;
-}>`SELECT * FROM users WHERE id = ${1}`;
+const response = await d1api.all<User>`SELECT * FROM users WHERE id = ${1}`;
 // {
 //   success: true,
 //   // Row data here.
@@ -58,17 +58,14 @@ const response = await d1api.all<{
 
 // Return first row. Returns null if no result.
 // Tagged template is used to prepare statements.
-const response = await d1api.first<{
-  id: number;
-}>`SELECT * FROM users WHERE id = ${1}`;
+const response = await d1api.first<User>`SELECT * FROM users WHERE id = ${1}`;
 // {
 //   id: 1
 // }
 
 // Execute a query. Tagged template is used to prepare statements.
-const response = await d1api.exec<{
-  id: number;
-}>`UPDATE users SET id = ${1} WHERE id = ${2} RETURNING *`;
+const response =
+  await d1api.exec<User>`UPDATE users SET id = ${1} WHERE id = ${2} RETURNING *`;
 // {
 //   success: true,
 //   result: [
@@ -105,7 +102,7 @@ The `options` object requires the following fields:
 
 Same as `D1API.exec`.
 
-### `D1API.all\`SELECT \* FROM user WHERE id = ${id}\``
+### ``D1API.all`SELECT \* FROM user WHERE id = ${id}```
 
 Returns result of all rows with tagged template.
 
@@ -137,7 +134,7 @@ Prefer using `all` with tagged template.
 
 Same as `D1API.all`.
 
-### `D1API.first\`SELECT \* FROM user WHERE id = ${id}\``
+### ``D1API.first`SELECT \* FROM user WHERE id = ${id}```
 
 Returns first row with tagged template.
 
@@ -161,7 +158,7 @@ Prefer using `first` with tagged template.
 
 Same as `D1API.first`.
 
-### `D1API.exec\`SELECT \* FROM user WHERE id = ${id}\``
+### ``D1API.exec`SELECT \* FROM user WHERE id = ${id}```
 
 Executes a query on the D1 API with tagged template.
 
@@ -211,8 +208,6 @@ Error throw when the `errors` field is returned non-empty from the D1 API. It co
 
 You can use the `body` field to get the original response.
 
-[build-img]: https://github.com/Cretezy/d1-api/actions/workflows/release.yml/badge.svg
-[build-url]: https://github.com/Cretzy/d1-api/actions/workflows/release.yml
 [downloads-img]: https://img.shields.io/npm/dt/d1-api
 [downloads-url]: https://www.npmtrends.com/d1-api
 [npm-img]: https://img.shields.io/npm/v/d1-api
