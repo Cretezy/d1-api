@@ -8,7 +8,7 @@
 
 It uses the [D1 HTTP API](https://developers.cloudflare.com/api/operations/cloudflare-d1-query-database) to run queries on your SQLite database. The D1 HTTP API has significate overhead which results in about half a second of latency on every query. This is intended and is not planned to be fixed by Cloudflare.
 
-`fetch` is required (available in Node 18+ and other runtimes).
+`fetch` is required (available in Node 18+ and other runtimes). This is an ESM-only module.
 
 ## Install
 

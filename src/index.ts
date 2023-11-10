@@ -1,5 +1,5 @@
-import type { D1QueryError, D1QueryResponse, D1Row } from './types';
-export type * from './types';
+import type { D1QueryError, D1QueryResponse, D1Row } from './types.js';
+export type * from './types.js';
 
 export interface D1APIOptions {
   // Hex string, 32 characters long

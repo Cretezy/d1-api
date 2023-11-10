@@ -1,8 +1,9 @@
 {
   "name": "d1-api",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Use the Cloudflare D1 API outside Workers",
   "main": "./lib/index.js",
+  "type": "module",
   "files": [
     "lib/**/*"
   ],
