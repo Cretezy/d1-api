@@ -1,3 +1,7 @@
+## v0.0.4 - 2023-11-10
+
+- Updated README
+
 ## v0.0.3 - 2023-11-10
 
 - Updated README

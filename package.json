@@ -1,6 +1,6 @@
 {
   "name": "d1-api",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Use the Cloudflare D1 API outside Workers",
   "main": "./lib/index.js",
   "files": [
@@ -27,7 +27,8 @@
     "node": ">=18.0"
   },
   "keywords": [
-    "cloudflare d1"
+    "cloudflare d1",
+    "d1 api"
   ],
   "bugs": {
     "url": "https://github.com/Cretezy/d1-api/issues"

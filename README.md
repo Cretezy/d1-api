@@ -102,7 +102,7 @@ The `options` object requires the following fields:
 
 Same as `D1API.exec`.
 
-### ``D1API.all`SELECT \* FROM user WHERE id = ${id}```
+### `` D1API.all`SELECT * FROM user WHERE id = ${id}` ``
 
 Returns result of all rows with tagged template.
 
@@ -134,7 +134,7 @@ Prefer using `all` with tagged template.
 
 Same as `D1API.all`.
 
-### ``D1API.first`SELECT \* FROM user WHERE id = ${id}```
+### `` D1API.first`SELECT * FROM user WHERE id = ${id}` ``
 
 Returns first row with tagged template.
 
@@ -158,7 +158,7 @@ Prefer using `first` with tagged template.
 
 Same as `D1API.first`.
 
-### ``D1API.exec`SELECT \* FROM user WHERE id = ${id}```
+### `` D1API.exec`SELECT * FROM user WHERE id = ${id}` ``
 
 Executes a query on the D1 API with tagged template.
 
