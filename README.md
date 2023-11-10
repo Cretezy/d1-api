@@ -4,7 +4,6 @@
 [![Build Status][build-img]][build-url]
 [![Downloads][downloads-img]][downloads-url]
 [![Issues][issues-img]][issues-url]
-[![Semantic Release][semantic-release-img]][semantic-release-url]
 
 `d1-api` is a package for interacting with [Cloudflare D1](https://developers.cloudflare.com/d1/) outside of Cloudflare Workers, and tries to match the D1 client API used in Workers.
 
@@ -212,17 +211,11 @@ Error throw when the `errors` field is returned non-empty from the D1 API. It co
 
 You can use the `body` field to get the original response.
 
-[build-img]: https://github.com/ryansonshine/d1-api/actions/workflows/release.yml/badge.svg
-[build-url]: https://github.com/ryansonshine/d1-api/actions/workflows/release.yml
+[build-img]: https://github.com/Cretezy/d1-api/actions/workflows/release.yml/badge.svg
+[build-url]: https://github.com/Cretzy/d1-api/actions/workflows/release.yml
 [downloads-img]: https://img.shields.io/npm/dt/d1-api
 [downloads-url]: https://www.npmtrends.com/d1-api
 [npm-img]: https://img.shields.io/npm/v/d1-api
 [npm-url]: https://www.npmjs.com/package/d1-api
-[issues-img]: https://img.shields.io/github/issues/ryansonshine/d1-api
-[issues-url]: https://github.com/ryansonshine/d1-api/issues
-[codecov-img]: https://codecov.io/gh/ryansonshine/d1-api/branch/main/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/ryansonshine/d1-api
-[semantic-release-img]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
-[semantic-release-url]: https://github.com/semantic-release/semantic-release
-[commitizen-img]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
-[commitizen-url]: http://commitizen.github.io/cz-cli/
+[issues-img]: https://img.shields.io/github/issues/Cretezy/d1-api
+[issues-url]: https://github.com/Cretezy/d1-api/issues

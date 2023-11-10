@@ -35,7 +35,7 @@
   "bugs": {
     "url": "https://github.com/Cretezy/d1-api/issues"
   },
-  "homepage": "https://github.com/Cretezy/d1-api#readme",
+  "homepage": "https://github.com/Cretezy/d1-api",
   "devDependencies": {
     "@types/node": "^20.9.0",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
